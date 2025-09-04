@@ -3,6 +3,17 @@
 Welcome to **SSH Journal** — a minimalist, terminal-first journaling app you can log into via SSH.  
 It’s like keeping a secret diary on a remote machine… except this one can **ask you questions** and **help generate tomorrow’s prompts with AI** ✨
 
+```
+===========================================================
+       __        __   _                           
+       \ \      / /__| | ___ ___  _ __ ___   ___  
+        \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \ 
+         \ V  V /  __/ | (_| (_) | | | | | |  __/ 
+          \_/\_/ \___|_|\___\___/|_| |_| |_|\___|    
+
+                🌸  WELCOME TO SSH-JOURNAL 🌸
+===========================================================
+```
 ---
 
 ## 🐚 Features
