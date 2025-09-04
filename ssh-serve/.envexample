@@ -1,0 +1,12 @@
+# ---------- REQUIRED ----------
+# Postgres connection string (URL form)
+# Local example:
+DB_DSN=postgres://appuser:a@b:5432/appdb
+
+# OpenAI key used by gen_tomorrow_question()
+OPENAI_API_KEY=sk-REPLACE_ME
+
+APP_TZ=America/Detroit
+
+HOST_KEY_PATH=./host_xxxx
+
