@@ -3,9 +3,11 @@ import psycopg2, psycopg2.extras
 from psycopg2.extras import RealDictCursor
 from base64 import b64encode
 from hashlib import sha256
+from dotenv import load_dotenv
 
+load_dotenv()
 # ---- Config from env ----
-DB_DSN = os.getenv("DB_DSN", "postgresql://user:pass@localhost:5432/journal")
+DB_DSN = os.getenv("DB_DSN")
 TZ = os.getenv("APP_TZ", "America/Detroit")     # your default “journal day” zone
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -248,11 +250,9 @@ async def start():
     host_key = os.getenv("HOST_KEY_PATH", "./host_ed25519")
     await asyncssh.create_server(
         lambda: Server(),
-        '', 22,
+        '', 2222,
         server_host_keys=[host_key],
         authorized_client_keys=None,    # we'll accept any key in the session handler
-        allow_scp=False,
-        allow_sftp=False,
         session_factory=handle_session
     )
     await asyncio.Future()
