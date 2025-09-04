@@ -4,6 +4,8 @@ Welcome to **SSH Journal** — a minimalist, terminal-first journaling app for d
 you can log into via SSH.  
 It’s like keeping a secret diary on a remote machine… except this one can **ask you questions** and **help generate tomorrow’s prompts with AI** ✨
 
+**DEMO VIDEO** : https://youtu.be/uBuO-6k_A7U
+
 ```
 ===========================================================
        __        __   _                           
